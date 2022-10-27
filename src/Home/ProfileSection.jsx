@@ -6,7 +6,7 @@ export default function ProfileSection() {
   return (
     <ProfileStats>
       <ProfilePicture>
-        <img src="/npc2.jpg"/>
+        <img src="https://randomuser.me/api/portraits/men/40.jpg"/>
         <div className="profileName">
           John Doe
         </div>

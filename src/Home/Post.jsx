@@ -57,14 +57,14 @@ export default function Post() {
   return (
     <WebPost>
       <PostAuthor>
-        <img src="/npc.jpg" alt="profile" />
+        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="profile" />
         <div>
           <div>John Doe</div>
           <div>2d ago</div>
         </div>
       </PostAuthor>
       <PostImage>
-        <img src="/landscape.jpg" alt="landscape" />
+        <img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="landscape" />
       </PostImage>
       <PostDescription>
         {showMoreDescription ? defaultDesc : defaultDesc.substring(0, 250)}
@@ -82,7 +82,7 @@ export default function Post() {
             placeholder="Type a comment..."
             ref={commentAreaRef}
           />
-          <img src="/npc2.jpg"/>
+          <img src="https://randomuser.me/api/portraits/men/40.jpg"/>
           <button>
             <PostIconProvider>
               <IoSendOutline />
