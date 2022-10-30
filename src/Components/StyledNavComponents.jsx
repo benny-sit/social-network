@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { IconContext } from 'react-icons';
+import { NavLink } from 'react-router-dom';
 
 const MyIconProvider = ({className, children}) => <IconContext.Provider value={{className}}>{children}</IconContext.Provider>;
 
@@ -13,12 +14,22 @@ export const NavIconProvider = styled(MyIconProvider)`
 export const NavItemTitle = styled.span`
     position: absolute;
     bottom: 0;
-    transform: translateY(100%);
+    transform: translateY(100%) translateX(-50%);
     font-size: 1.1rem;
     transition: all 0.5s linear;
     opacity: 0;
+    left: 50%;
+
+    @media (max-width: 768px) {
+        font-size: small;
+    }
 `
 
+export const StyledNavLink = styled(NavLink)`
+    color: inherit;
+    display: flex;
+    position: relative;
+`
 
 
 export const StyledNavItem = styled.li`
@@ -35,7 +46,7 @@ export const StyledNavItem = styled.li`
         }
         ${NavItemTitle} {
             opacity: 1;
-            transform: translateY(0);
+            transform: translateY(0) translateX(-50%);
         }
     }
 
@@ -48,6 +59,7 @@ export const StyledNavItem = styled.li`
             overflow: hidden;
             text-overflow: unset;
             white-space: nowrap;
+            left: 0;
         }
         margin: 0 0.5rem;
         background-color: var(--main-color);
@@ -69,7 +81,7 @@ export const StyledNavItem = styled.li`
         box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.15);
     }
 
-    &.active{
+    .active{
         ${NavIconProvider} {
             background-color: var(--main-color);
             border-radius: 9999px;
@@ -84,6 +96,7 @@ export const StyledNavItem = styled.li`
         &.highlight {
             padding: 0 0.5rem;
         }
+        font-size: small;
     }
 `
 

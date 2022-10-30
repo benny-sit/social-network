@@ -7,6 +7,7 @@ export const Container = styled.div`
     margin: 0 auto;
     display: flex;
     gap: 1rem;
+    justify-content: center;
 
 
     -ms-overflow-style: none;  /* IE and Edge */
