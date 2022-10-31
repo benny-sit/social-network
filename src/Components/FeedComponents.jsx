@@ -38,7 +38,7 @@ export const WebPost = styled.div`
     background-color: white;
     width: 100%;
     max-width: 100%;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     border-radius: 0.75rem;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
     color: var(--raisin-black);
