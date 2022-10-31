@@ -47,7 +47,7 @@ export default function NavBottom() {
         </StyledToggleMore>
         <StyledNavItems>
           <StyledNavItem>
-            <StyledNavLink to="/" className={({ isActive}) => (isActive ? 'active' : '')} end>
+            <StyledNavLink to="/social-network/" className={({ isActive}) => (isActive ? 'active' : '')} end>
               <NavIconProvider>
                 <IoHomeOutline />
               </NavIconProvider>
@@ -55,7 +55,7 @@ export default function NavBottom() {
             </StyledNavLink>
           </StyledNavItem>
           <StyledNavItem>
-          <StyledNavLink to="/profile" className={({ isActive}) => (isActive ? 'active' : '')}>
+          <StyledNavLink to="/social-network/profile" className={({ isActive}) => (isActive ? 'active' : '')}>
             <NavIconProvider>
               <IoPersonOutline />
             </NavIconProvider>
@@ -69,7 +69,7 @@ export default function NavBottom() {
             <NavItemTitle>New Post</NavItemTitle>
           </StyledNavItem>
           <StyledNavItem>
-          <StyledNavLink to="/messages" className={({ isActive}) => (isActive ? 'active' : '')}>
+          <StyledNavLink to="/social-network/messages" className={({ isActive}) => (isActive ? 'active' : '')}>
             <NavIconProvider>
               <IoChatboxOutline />
             </NavIconProvider>
@@ -77,7 +77,7 @@ export default function NavBottom() {
           </StyledNavLink>
           </StyledNavItem>
           <StyledNavItem>
-          <StyledNavLink to="/search" className={({ isActive}) => (isActive ? 'active' : '')}>
+          <StyledNavLink to="/social-network/search" className={({ isActive}) => (isActive ? 'active' : '')}>
             <NavIconProvider>
               <IoSearchOutline />
             </NavIconProvider>
